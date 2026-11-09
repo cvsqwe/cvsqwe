@@ -1,10 +1,10 @@
-## Привет, я cvsqwe
+## Hi, I'm cvsqwe
 
-Пишу на Python, C++ и QML. Долго сидел на Linux и делал под него всякое, сейчас перешёл на Windows и занимаюсь ботами.
+I write Python, C++ and QML. Spent a long time on Linux building stuff for it, now I'm on Windows and mostly doing bots.
 
-### Сейчас: [matele](https://github.com/cvsqwe/matele)
+### Now: [matele](https://github.com/cvsqwe/matele)
 
-Фреймворк для ботов, которые работают сразу в MAX и Telegram. Хендлеры пишутся один раз, а различия между мессенджерами matele берёт на себя. Для MAX есть типизированный клиент ко всему Bot API, модели генерируются из официальной схемы.
+A framework for bots that run on MAX and Telegram at the same time. You write handlers once and matele deals with the differences between the messengers. For MAX there's a typed client for the whole Bot API, with models generated from the official schema.
 
 ```python
 from matele import Context, Dispatcher
@@ -15,26 +15,26 @@ dp = Dispatcher()
 
 @dp.command("start")
 async def start(ctx: Context):
-    await ctx.reply(f"Привет! Ты пишешь из {ctx.platform}")
+    await ctx.reply(f"Hi! You're writing from {ctx.platform}")
 
 dp.run_polling(MaxBot(MAX_TOKEN), TelegramBot(TG_TOKEN))
 ```
 
-### Раньше
+### Before
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/cvsqwe/cove"><img src="https://raw.githubusercontent.com/cvsqwe/cove/main/docs/screens/dashboard.webp" alt="cove"></a>
       <p><a href="https://github.com/cvsqwe/cove"><b>cove</b></a><br>
-      Моя сборка для Hyprland: свой шелл на Quickshell, редактор, тема для Firefox и терминал в одном стиле. Цвета подстраиваются под обои.</p>
+      My Hyprland setup: a custom Quickshell shell, an editor, a Firefox theme and a terminal, all in one style. Colors follow the wallpaper.</p>
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/cvsqwe/OpenAula"><img src="https://raw.githubusercontent.com/cvsqwe/OpenAula/main/docs/screenshots/lighting.png" alt="OpenAula"></a>
       <p><a href="https://github.com/cvsqwe/OpenAula"><b>OpenAula</b></a><br>
-      Подсветка и макросы для клавиатуры Aula F75 под Linux. Около 40 эффектов, рисование по клавишам, настройка из браузера.</p>
+      Lighting and macros for the Aula F75 keyboard on Linux. Around 40 effects, per-key painting, configured from the browser.</p>
     </td>
   </tr>
 </table>
 
-Ещё есть [мои старые дотфайлы для Hyprland](https://github.com/cvsqwe/MD4H-My-Dotfiles-For-Hyprland-).
+There are also [my old Hyprland dotfiles](https://github.com/cvsqwe/MD4H-My-Dotfiles-For-Hyprland-).
